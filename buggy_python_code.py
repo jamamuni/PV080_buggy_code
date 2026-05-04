@@ -31,7 +31,7 @@ def fetch_website(urllib_version, url):
  
     try: 
         http = urllib.PoolManager()
-        r = http.request('GET', url)
+        http.request('GET', url)
     except:
         print('Exception')
 
@@ -46,7 +46,7 @@ def authenticate(password):
     if password == "Iloveyou":
         print("Successfully authenticated!")
     else:
-        print("Invalid password!"):
+        print("Invalid password!")
 
 if __name__ == '__main__':
     print("Vulnerabilities:")
