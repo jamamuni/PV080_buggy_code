@@ -29,11 +29,11 @@ def fetch_website(urllib_version, url):
         import urllib3 as urllib
     # Fetch and print the requested URL
  
-    try: 
-        http = urllib.PoolManager()
-        http.request('GET', url)
-    except:
-        print('Exception')
+    # try: 
+    #     http = urllib.PoolManager()
+    #     http.request('GET', url)
+    # except:
+    #     print('Exception')
 
 
 def load_yaml(filename):
